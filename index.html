@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Random Password Generator</h1>
+            <hr>
+        </div>
+        <div class="error"  id="error"></div>
+        <form action="" >
+            <input type="text" class=" input-1" readonly placeholder="Loading ..." id="show">
+            <input type="text" class=" input-2" placeholder="Enter Password Lenght Here ..." id="input">
+        </form>
+        <div class="checkbox-container">
+            <h2>Include At Least One Type</h2>
+            <div class="checkbox-container-1">
+                <div class="check"><input type="checkbox" id="check1"> <label for="">Lowercase Alphabets</label></div>
+                <div class="check"><input type="checkbox" id="check2" checked> <label for="">Uppercase Alphabets</label></div>
+                <div class="check"><input type="checkbox" id="check3"> <label for="">Symbols</label></div>
+                <div class="check"><input type="checkbox" id="check4" checked> <label for="">Number</label></div>
+
+            </div>
+        </div>
+        <button id="btn" onclick="generatePassword()" >Generate Password</button>
+    </div>    
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
